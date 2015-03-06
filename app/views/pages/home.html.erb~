@@ -1,0 +1,17 @@
+<h1> Users! </h1>
+<% for user in @users %>
+  Username: <%= user.username %>; Email: <%= user.email %>; Age: <%= user.age %> <br>
+<% end %>
+<h1> Cats! </h1>
+<% for cat in @cats %>
+  Name: <%= cat.name%> <br>
+<% end %>
+<h1> To-do List! </h1>
+<b>Finished: <br> </b>
+<% for todo in @done %>
+  <%= todo.task %> <br>
+<% end %>
+<b>Not finished: <br> </b>
+<% for todo in @notDone %>
+  <%= todo.task %> <br>
+<% end %>
